@@ -2,7 +2,7 @@ const fs = require("fs");
 const axios = require("axios");
 
 const API_URL = "https://api.openai.com/v1/chat/completions";
-const API_KEY = process.env.API_KEY;
+const API_KEY = "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";
 const prompt = process.env.PROMPT;
 
 const generate = async () => {
