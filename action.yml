@@ -3,10 +3,10 @@ name: OpenAI Conversation
 description: Run OpenAI conversation script
 
 inputs:
-  api-key:
+  API_KEY:
     description: "OpenAI API Key"
     required: true
-  prompt:
+  PROMPT:
     description: "Prompt for Conversation"
     required: true
 
