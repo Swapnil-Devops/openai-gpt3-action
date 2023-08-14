@@ -1,15 +1,25 @@
-name: OpenAI Conversation
-
-description: Run OpenAI conversation script
+name: Generate OpenAI Response
+description: Generate a response using OpenAI API and save in HTML and Markdown formats
 
 inputs:
-  API_KEY:
-    description: "OpenAI API Key"
-    required: true
-  PROMPT:
-    description: "Prompt for Conversation"
+  prompt:
+    description: 'The user prompt for generating the response'
     required: true
 
 runs:
-  using: "node12"
-  main: "index.js"
+  using: 'node16'
+  main: 'index.js'
+
+branding:
+  icon: 'code'
+  color: 'gray-dark'
+
+permissions:
+  actions: read
+  contents: write
+
+outputs:
+  generated-html:
+    description: 'Path to the generated HTML response'
+  generated-md:
+    description: 'Path to the generated Markdown response'
