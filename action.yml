@@ -3,23 +3,19 @@ description: Generate a response using OpenAI API and save in HTML and Markdown 
 
 inputs:
   prompt:
-    description: 'The user prompt for generating the response'
+    description: "The user prompt for generating the response"
     required: true
 
 runs:
-  using: 'node16'
-  main: 'index.js'
+  using: "node16"
+  main: "index.js"
 
 branding:
-  icon: 'code'
-  color: 'gray-dark'
-
-permissions:
-  actions: read
-  contents: write
+  icon: "code"
+  color: "gray-dark"
 
 outputs:
   generated-html:
-    description: 'Path to the generated HTML response'
+    description: "Path to the generated HTML response"
   generated-md:
-    description: 'Path to the generated Markdown response'
+    description: "Path to the generated Markdown response"
